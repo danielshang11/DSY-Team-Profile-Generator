@@ -2,21 +2,21 @@ const Manager = require("../lib/Manager");
 const Employee = require("../lib/Employee");
 
 describe("Manager", () => {
-  it("Can set office number via constructor argument", () => {
-    const testValue = 100;
-    const e = new Manager("Foo", 1, "test@test.com", testValue);
-    expect(e.officeNumber).toBe(testValue);
+  it("if it's able to set office number through constructor argument", () => {
+    const test = 1000;
+    const a = new Manager("Daniel", 1597534682, "Daniel@test.com", test);
+    expect(a.officeNumber).toBe(test);
   });
 
-  it("getRole() should return \"Manager\"", () => {
-    const testValue = "Manager";
-    const e = new Manager("Foo", 1, "test@test.com", 100);
-    expect(e.getRole()).toBe(testValue);
+  it("if getRole() can return \"Manager\"?", () => {
+    const test = "Manager";
+    const a = new Manager("Daniel", 1597534682, "Daniel@test.com", 1000);
+    expect(a.getRole()).toBe(test);
   });
 
-  it("Can get office number via getOffice()", () => {
-    const testValue = 100;
-    const e = new Manager("Foo", 1, "test@test.com", testValue);
-    expect(e.getOfficeNumber()).toBe(testValue);
+  it("if getOffice() method could grab officenumber", () => {
+    const test = 1000;
+    const a = new Manager("Daniel", 1597534682, "Daniel@test.com", test);
+    expect(a.getOfficeNumber()).toBe(test);
   });
 })

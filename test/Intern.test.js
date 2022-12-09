@@ -1,21 +1,21 @@
 const Intern = require("../lib/Intern");
 
 describe("Intern", () => {
-  it("Can set school via constructor", () => {
-    const testValue = "UCLA";
-    const e = new Intern("Foo", 1, "test@test.com", testValue);
-    expect(e.school).toBe(testValue);
+  it("if it's able to set school through constructor", () => {
+    const test = "UCI";
+    const a = new Intern("Daniel", 11223344, "Daniel@test.com", test);
+    expect(a.school).toBe(test);
   });
 
-  it("getRole() should return \"Intern\"", () => {
-    const testValue = "Intern";
-    const e = new Intern("Foo", 1, "test@test.com", "UCLA");
-    expect(e.getRole()).toBe(testValue);
+  it("if getRole() method is able to return \"Intern\"?", () => {
+    const test = "Intern";
+    const a = new Intern("Daniel", 11223344, "Daniel@test.com", "UCLA");
+    expect(a.getRole()).toBe(test);
   });
 
-  it("Can get school via getSchool()", () => {
-    const testValue = "UCLA";
-    const e = new Intern("Foo", 1, "test@test.com", testValue);
-    expect(e.getSchool()).toBe(testValue);
+  it("if getSchool() method is worked?", () => {
+    const test = "UCI";
+    const a = new Intern("Daniel", 11223344, "Daniel@test.com", test);
+    expect(a.getSchool()).toBe(test);
   });
 })
